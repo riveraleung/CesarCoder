@@ -31,12 +31,16 @@ if mode=='e':
   content = input()
   print('key please')
   key=input()
+  if key=='':
+    key='3'
   encpt(content,key)
 elif mode=='d':
   print('please input letters')
   content = input()
   print('key please')
   key=input()
+  if key=='':
+    key='3'
   decpt(content,key)
 else:
   print('please set the mode')
